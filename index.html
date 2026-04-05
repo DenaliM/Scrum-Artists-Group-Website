@@ -4,52 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
     <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
     <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
-
-    <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
     </nav>
 </header>
 
-<!-- Team bios section (default section) -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
+
+    <!-- Denali -->
     <div class="card">
         <h2>Denali Miao</h2>
         <p>Logo Designer</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
         <p id="bio1" class="bio">Denali is a skilled logo designer with 1 year of experience in creating creative logos.</p>
+        <div class="member-images">
+            <div class="image-block">
+                <p class="image-label">Bio Photo</p>
+                <img src="img/denali-bio.jpg" alt="Denali Miao bio photo" class="bio-photo">
+            </div>
+            <div class="image-block">
+                <p class="image-label">Mood Board</p>
+                <img src="img/denali-moodboard.jpg" alt="Denali Miao mood board" class="moodboard-photo">
+            </div>
+        </div>
     </div>
+
+    <!-- Hassan -->
     <div class="card">
         <h2>Hassan Johnson</h2>
         <p>Product Owner</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Hassan is the Product Owner specializing in strong with communication and team management.</p>
+        <div class="member-images">
+            <div class="image-block">
+                <p class="image-label">Bio Photo</p>
+                <img src="img/hassan-bio.jpg" alt="Hassan Johnson bio photo" class="bio-photo">
+            </div>
+            <div class="image-block">
+                <p class="image-label">Mood Board</p>
+                <img src="img/hassan-moodboard.jpg" alt="Hassan Johnson mood board" class="moodboard-photo">
+            </div>
+        </div>
     </div>
+
+    <!-- Seth -->
     <div class="card">
         <h2>Seth Stegall</h2>
         <p>Collaborator</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
         <p id="bio3" class="bio">Seth is a programmer who loves to work with others, and is always their to help his team whenever needed.</p>
+        <div class="member-images">
+            <div class="image-block">
+                <p class="image-label">Bio Photo</p>
+                <img src="img/seth-bio.jpg" alt="Seth Stegall bio photo" class="bio-photo">
+            </div>
+            <div class="image-block">
+                <p class="image-label">Mood Board</p>
+                <img src="img/seth-moodboard.jpg" alt="Seth Stegall mood board" class="moodboard-photo">
+            </div>
+        </div>
     </div>
+
 </div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
     <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
 </div>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
-
+<script src="script.js"></script>
 </body>
 </html>
